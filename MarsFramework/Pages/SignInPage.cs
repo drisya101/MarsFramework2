@@ -29,9 +29,12 @@ namespace MarsFramework.Pages
 
         #endregion
 
-        internal void LoginSteps()
+        internal void Login(string username, string password)
         {
-
+            SignIntab.Click();
+            Email.SendKeys(username);
+            Password.SendKeys(password);
+            LoginBtn.Click();
         }
     }
 }
